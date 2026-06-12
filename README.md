@@ -1,28 +1,25 @@
-#001 SQL Select Statement Tutorial
+# 01 - SELECT Statement
 
-Concepts Covered:
+## Topics Covered
+
 - SELECT *
-- Selecting specific columns
+- Selecting Specific Columns
 - DISTINCT
-- Database querying
+- Database Querying
 
-Database Used:
+## Database Used
+
 parks_and_recreation
 
-## 02 - WHERE Clause
+## Example Queries
 
-Topics Covered:
-- Comparison Operators (=, >)
-- AND Operator
-- OR Operator
-- NOT Operator
-- Parentheses in Conditions
-- LIKE Operator
-- Wildcards (% and _)
-
-Examples:
 ```sql
 SELECT *
-FROM employee_salary
-WHERE salary > 70000;
+FROM employee_demographics;
+
+SELECT first_name
+FROM employee_demographics;
+
+SELECT DISTINCT gender
+FROM employee_demographics;
 ```
