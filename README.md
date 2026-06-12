@@ -23,3 +23,20 @@ FROM employee_demographics;
 SELECT DISTINCT gender
 FROM employee_demographics;
 ```
+## 02 - WHERE Clause
+
+Topics Covered:
+- Comparison Operators (=, >)
+- AND Operator
+- OR Operator
+- NOT Operator
+- Parentheses in Conditions
+- LIKE Operator
+- Wildcards (% and _)
+
+Examples:
+```sql
+SELECT *
+FROM employee_salary
+WHERE salary > 70000;
+```
