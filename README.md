@@ -141,3 +141,26 @@ Examples:
 DELETE FROM employee_demographics
 WHERE employee_id = 15;
 ```
+## 06 - JOINS
+
+Topics Covered:
+
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- SELF JOIN
+- Multiple Table JOIN
+- Table Aliases (AS)
+
+Database Used: parks_and_recreation
+
+Examples:
+
+```sql
+SELECT *
+FROM employee_demographics AS ed
+INNER JOIN employee_salary AS es
+ON ed.employee_id = es.employee_id
+INNER JOIN parks_departments AS pd
+ON es.dept_id = pd.department_id;
+```
