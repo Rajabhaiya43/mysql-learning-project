@@ -217,25 +217,9 @@ ORDER BY first_name;
 ```
 
 ```sql
-SELECT first_name, LENGTH(first_name) AS SIZE
-FROM employee_demographics
-ORDER BY LENGTH(first_name);
-```
-
-```sql
 SELECT first_name,
 UPPER(first_name) AS Ucase,
 LOWER(first_name) AS Lcase
 FROM employee_demographics;
 ```
 
-```sql
-SELECT first_name, REPLACE(first_name, 'A', 'S') AS Replace_Char
-FROM employee_demographics;
-```
-
-```sql
-SELECT first_name, last_name,
-CONCAT(first_name, ' ', last_name) AS Full_Name
-FROM employee_demographics;
-```
