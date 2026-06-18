@@ -267,3 +267,36 @@ CASE
 END AS BOUNSE
 FROM employee_salary;
 ```
+## 09 - SUBQUERIES
+
+Topics Covered:
+
+- Subqueries in WHERE Clause
+- Subqueries with IN Operator
+- Nested Queries
+- Aggregate Functions in Subqueries
+- Scalar Subqueries
+
+Database Used: parks_and_recreation
+
+Examples:
+
+```sql
+SELECT first_name, occupation, salary
+FROM employee_salary
+WHERE first_name IN
+(
+    SELECT first_name
+    FROM employee_demographics
+    WHERE age > 50
+);
+```
+
+```sql
+SELECT first_name, occupation, salary,
+(
+    SELECT AVG(salary)
+    FROM employee_salary
+)
+FROM employee_salary;
+```
