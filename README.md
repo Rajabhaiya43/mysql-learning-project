@@ -375,3 +375,40 @@ WHERE salary > 50000;
 SELECT *
 FROM salary_over_50k;
 ```
+## 12 - Stored Procedures
+
+Topics Covered:
+
+- CREATE PROCEDURE
+- CALL Procedure
+- DELIMITER
+- Multiple SQL Statements
+- Parameters in Stored Procedures
+
+Database Used: parks_and_recreation
+
+Examples:
+
+```sql
+CREATE PROCEDURE ONLY_FEMALE()
+SELECT *
+FROM employee_demographics
+WHERE gender = 'female';
+
+CALL ONLY_FEMALE();
+```
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE FILTER_SALARY_via_NAME(e_id INT)
+BEGIN
+    SELECT first_name, salary
+    FROM employee_salary
+    WHERE employee_id = e_id;
+END $$
+
+DELIMITER ;
+
+CALL FILTER_SALARY_via_NAME(07);
+```
