@@ -408,6 +408,42 @@ BEGIN
     WHERE employee_id = e_id;
 END $$
 
+## 13 - Triggers & Events
+
+Topics Covered:
+
+- CREATE TRIGGER
+- AFTER INSERT Trigger
+- NEW Keyword
+- CREATE EVENT
+- Scheduled Events
+- Automated INSERT, UPDATE & DELETE
+
+Database Used: parks_and_recreation
+
+Examples:
+
+```sql
+CREATE TRIGGER New_Employee
+AFTER INSERT ON employee_demographics
+FOR EACH ROW
+BEGIN
+    INSERT INTO employee_salary (employee_id, first_name, last_name)
+    VALUE (NEW.employee_id, NEW.first_name, NEW.last_name);
+END;
+```
+
+```sql
+CREATE EVENT LOW_SALARY
+ON SCHEDULE EVERY 1 YEAR
+DO
+BEGIN
+    UPDATE employee_salary
+    SET salary = salary + 10000
+    WHERE salary < 30000;
+END;
+```
+
 DELIMITER ;
 
 CALL FILTER_SALARY_via_NAME(07);
