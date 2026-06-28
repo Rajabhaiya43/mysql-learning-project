@@ -2,79 +2,84 @@
 
 # 🧹 SQL Data Cleaning Project
 
-### Cleaning and Standardizing Layoffs Dataset using MySQL
+### End-to-End Data Cleaning using MySQL
 
 <img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql">
-<img src="https://img.shields.io/badge/Data-Cleaning-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge">
-
----
-
-### 📊 Project Overview
-
-This project focuses on cleaning raw company layoff data using MySQL.
-
-Removing duplicate records • Standardizing values • Handling NULL values • Formatting dates • Preparing clean data for analysis.
+<img src="https://img.shields.io/badge/SQL-Data%20Cleaning-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge">
 
 </div>
 
 ---
 
-# 📁 Dataset
+## 📖 Project Overview
+
+This project demonstrates an end-to-end SQL Data Cleaning workflow using a company layoffs dataset.
+
+The objective was to transform raw data into a clean, standardized, and analysis-ready dataset using MySQL.
+
+---
+
+## 📂 Dataset
 
 **Dataset:** `Company_Fund.csv`
 
 ---
 
-# 🎯 Objectives
+## 🎯 Objectives
 
 - ✅ Remove Duplicate Records
-- ✅ Standardize Text Data
+- ✅ Standardize Data
 - ✅ Handle NULL & Blank Values
-- ⏳ Remove Unnecessary Rows
-- ⏳ Prepare Clean Dataset
+- ✅ Convert Date Format
+- ✅ Remove Unnecessary Records
+- ✅ Remove Helper Columns
+- ✅ Create Final Clean Dataset
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ SQL Concepts Used
 
-- MySQL Workbench
-- SQL
-- Window Functions
-- CTEs
-- Data Cleaning Techniques
-
----
-
-# 📚 Concepts Covered
-
-- ROW_NUMBER()
-- CTE
+- Window Functions (`ROW_NUMBER()`)
+- CTE (Common Table Expressions)
 - TRIM()
 - STR_TO_DATE()
 - UPDATE
 - DELETE
 - ALTER TABLE
-- Window Functions
+- JOIN
+- Data Standardization
 
 ---
 
-# 📸 Output
+## 📌 Data Cleaning Workflow
 
-*(Screenshots will be added after project completion.)*
+1. Created a clone of the original table
+2. Identified duplicate records using `ROW_NUMBER()`
+3. Removed duplicate rows
+4. Standardized company, industry, and country values
+5. Converted text dates into MySQL DATE format
+6. Filled missing industry values
+7. Removed meaningless NULL records
+8. Dropped helper columns
+9. Generated the final cleaned dataset
 
 ---
 
-# 🚀 Project Status
+## 📸 Project Output
 
-🟠 **Work In Progress**
+*(Add screenshots here after completion.)*
 
-Current Progress:
+- Raw Dataset
+- Duplicate Detection
+- Standardized Data
+- Final Clean Dataset
 
-- ✅ Duplicate Removal
-- ✅ Standardization
-- 🔄 NULL Handling
-- ⏳ Final Cleaning
+---
+
+## 🚀 Project Status
+
+🟢 Completed
 
 ---
 
