@@ -24,9 +24,9 @@
 
 ## 📊 Repository Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Rajabhaiya43/mysql-learning-project?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/Rajabhaiya43/mysql-learning-project?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Rajabhaiya43/mysql-learning-project?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Rajabhaiya43/mysql-learning2026?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/Rajabhaiya43/mysql-learning2026?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/Rajabhaiya43/mysql-learning2026?style=flat-square)
 
 ---
 # 01 - SELECT Statement
