@@ -28,6 +28,61 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Rajabhaiya43/mysql-learning2026?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/Rajabhaiya43/mysql-learning2026?style=flat-square)
 
+
+
+---
+
+# 📂 Repository Structure
+
+```text
+mysql-learning2026
+│
+├── 📁 Notes
+│   ├── Basic
+│   ├── Intermediate
+│   └── Advanced
+│
+├── 📁 Projects
+│   ├── 🧹 SQL Data Cleaning
+│   └── 📊 SQL Exploratory Data Analysis
+│
+├── 01_SELECT_STATEMENTS.sql
+├── 02_WHERE_CLAUSE.sql
+├── 03_GROUP_BY_ORDER_BY.sql
+├── 04_HAVING_LIMIT_ALIASING.sql
+├── 05_INSERT_UPDATE_DELETE.sql
+├── 06_JOINS.sql
+├── 07_UNION_AND_STRING_FUNCTIONS.sql
+├── 08_CASE_STATEMENTS.sql
+├── 09_SUBQUERIES.sql
+├── 10_WINDOW_FUNCTIONS.sql
+├── 11_CTEs_AND_TEMP_TABLES.sql
+├── 12_STORED_PROCEDURES.sql
+├── 13_TRIGGERS_AND_EVENTS.sql
+└── README.md
+```
+
+---
+
+# 📚 Learning Notes
+
+📖 Handwritten SQL notes organized by difficulty level.
+
+- 🟢 Basic SQL Notes
+- 🟡 Intermediate SQL Notes
+- 🔴 Advanced SQL Notes
+
+---
+
+# 🚀 SQL Projects
+
+| Project | Status |
+|---------|--------|
+| 🧹 SQL Data Cleaning | ✅ Completed |
+| 📊 SQL Exploratory Data Analysis | ✅ Completed |
+
+---
+
 ---
 # 01 - SELECT Statement
 
